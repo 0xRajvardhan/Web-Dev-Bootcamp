@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+
+        @media (max-width: 300px) {
+            body {
+                background-color: red;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+        
+
+        @media (min-width: 300px) and (max-width: 500px) {
+            body {
+                background-color: blue;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 800px) {
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+
+        }
+
+        @media (min-width: 800px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        .border {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="border">
+            <span>
+                Home
+            </span>
+            <span>
+                About
+            </span>
+            <span>
+                Services
+            </span>
+            <span>
+                Contact
+            </span>
+        </nav>
+        <section class="border">
+            <h2>Learn CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eligendi voluptatibus nam quas, optio accusantium! Voluptates suscipit iure id necessitatibus a odit aliquid rem hic dolorum minima recusandae ut quam deserunt sunt corrupti, vero consequatur ipsum perferendis dolorem pariatur! Impedit nesciunt, ipsam obcaecati recusandae dignissimos rem reprehenderit quia, ipsa labore sunt sint, accusantium amet tempore consequatur ut repellendus consequuntur enim earum nostrum facilis? Est iure perspiciatis veniam aliquid accusantium, dolores non aperiam repellat, esse, doloribus a. Amet, voluptatibus tempora nisi quos iste ad repellendus excepturi soluta laborum atque esse, nihil perspiciatis provident distinctio vero, eligendi hic reprehenderit accusantium. Consequuntur facere maxime explicabo iusto odio, corporis harum ratione recusandae. Eligendi provident harum, accusantium inventore quas quam. Tempora possimus quibusdam corrupti iste modi eligendi?</p>
+        </section>
+        <aside class="border">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="border">Copyright</footer>
+</body>
+
+</html>

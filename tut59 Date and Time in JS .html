@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in JavaScript</title>
+    <style>
+        .container {
+            font-size: 18px;
+            background-color: blanchedalmond;
+            border: 2px solid grey;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">This is a container
+        Current Time is - <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is Date and Time tutorial");
+
+        let now = new Date();
+        console.log(now);
+
+        // let newDate = new Date("2029-09-30");
+        // console.log(newDate);
+
+        // let newDate = new Date(year,month,hour,min,sec,milisec);
+
+        let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("The year is - ", yr);
+        let dt = newDate.getDate();
+        console.log("The date is - ", dt);
+        let month = newDate.getMonth();
+        console.log("The month is - ", month);
+        // let day = newDate.getDay();
+        // console.log("The day is - ", day);
+        // let hr = newDate.getDay();
+        // console.log("The hour is - ", hr);
+        // let min = newDate.getDay();
+        // console.log("The min is - ", min);
+
+        newDate.setDate(5);
+        // newDate.setFullYear(5);
+        // newDate.setHours(5);
+        // newDate.setMinutes(5);
+        // newDate.setMonth(5);
+        // newDate.setTime(5);
+        // newDate.setMilliseconds(5);
+        console.log(newDate);
+
+        setInterval(updateTime, 1000);
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+
+</html>

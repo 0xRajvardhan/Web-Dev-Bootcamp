@@ -1,0 +1,81 @@
+// console.log("Hello World");
+
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/HTML');
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pseudo Selectors and More Designing</title>
+  
+      <style>
+      h3{
+          font-family:'Times New Roman', Times, serif;
+      }
+          .container{
+              border: 2px solid #8c05fb;
+              background-color:rgb(175 210 234);
+              padding: 34px;
+              margin: 34px auto;
+              width: 666px;
+              /* font-family: cursive; */
+              border-radius: 10px;
+          }
+          .btn{
+  
+              /* background-color:#f1c6fc; */
+              background-color: white;
+              padding: 4px;
+              /* border: none; */
+              border-color:rgb(69, 119, 195);
+              cursor: pointer;
+              font-family: cursive;
+              font-size: 13px;
+              color: blue;
+           border-radius: 50px ;
+           /* font-weight: bold; */
+          }
+          .btn:hover{
+              color: white;
+              /* background-color: #f1c6fc; */
+              background-color: rgb(69, 119, 195) ;
+  
+  
+  
+          }
+          a{
+              text-decoration: none;
+          }
+          a:visited{
+              background-color: yellow;
+          }
+          a:hover{
+              color: red;
+              background-color: aquamarine;
+          }
+  
+      </style>
+  </head>
+  <body>
+      <div class="container" id="cont1">
+   <h3>This is my Heading</h3>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ipsum, quidem sapiente porro impedit voluptatum quaerat doloremque nesciunt soluta ducimus ullam sequi nam alias unde ipsam doloribus ex tenetur! Eligendi consequuntur dolores esse consequatur?</p>
+   <a target="_blank" href="https://twitter.com/login" class="btn"> Read more</a>
+   <button class="btn">Contact us</button>
+      </div>
+      
+  </body>
+  </html>`);
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

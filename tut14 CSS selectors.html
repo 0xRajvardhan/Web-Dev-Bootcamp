@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        #redElement {
+            border: 5px solid blue;
+            /* for creating colored border of texts */
+        }
+
+        #redElement {
+            /* this "#+Identity" (for id) AND  ". + Class Name" (for class) is used to apply style to a specific location */
+            color: red;
+        }
+
+        .blueClass {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>CSS Selectors</h3>
+    <p>This is a simple program to demonstrate the Selectors</p>
+    <p id="redElement">This is a another simple program to demonstrate the Selectors</p>
+    <div>
+        <p class="blueClass">This is a simple program to demonstrate the Selectors</p>
+    </div>
+
+    <!-- Internal CSS (one written in the head) applies to whole html unless inline is mentioned -->
+</body>
+
+</html>

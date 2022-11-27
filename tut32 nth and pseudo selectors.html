@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child pseudo selectors</title>
+
+    <style>
+        .container {
+            margin: auto;
+            width: 233px;
+            display: block;
+        }
+
+        input {
+            display: block;
+        }
+        input[type='text'] {
+            padding: 44px;
+            border: 2px solid red;
+            /* This is a psuedo selector which you can aplly by selecting a particular attribute */
+        }
+        a[target]{
+            font-size: 34px;
+            color: violet;
+        }
+        a[target="_self"]{
+            font-size: 44px;
+            color: blue;
+        }
+        a{
+            color: aquamarine;
+        }
+        input[type='email']{
+            color: yellow;
+            border: 4px solid black;
+        }
+        /* This will apply CSS for third child  */
+    li:nth-child(3){
+        color: cyan;
+    }
+    /* li:nth-child(2n+0){
+        color: red;
+    } */
+    li:nth-child(3n+3){
+        color: red;
+    }
+
+    /* odd even child  */
+    li:nth-child(odd){
+        background-color: yellow;
+    }
+    li:nth-child(even){
+        background-color: green;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="https://www.google.co.in/" target="_blank">Go to Google</a></h1>
+        <h1><a href="https://www.twitter.com/" target="_self">Go to Twitter</a></h1>
+        <h1><a href="https://www.Facebook.com/" >Go to Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter  name">
+            <input type="email" placeholder="Enter  email">
+            <input type="password" placeholder="Enter password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item6</li>
+            <li class="item" id="item-8">Item6</li>
+            <li class="item" id="item-9">Item6</li>
+            <li class="item" id="item-10">Item6</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

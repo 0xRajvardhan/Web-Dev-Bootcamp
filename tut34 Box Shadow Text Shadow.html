@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=z, initial-scale=1.0">
+    <title>Text Shadow Box Shadow</title>
+    <style>
+        .container {
+            display: flex;
+            color: black;
+        }
+
+        .card {
+            margin: 23px 12px;
+            padding: 23px 12px;
+            border: 2px solid purple;
+            background-color: rgb(125, 204, 228);
+            box-shadow: 10px 10px yellow;
+            /* if you give negative value then the shadow will go up  */
+            box-shadow: 10px 10px 20px rgb(54, 81, 85);
+        /* you can also give multiple shadows using a comma  */
+        }
+    .card h2{
+        text-shadow: 3px 4px 2px white, 3px 4px 2px red;
+
+        /* Applied multiple text shadows  */
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fuga expedita dolores, eveniet qui aspernatur doloribus libero fugit nemo, perspiciatis ab odit hic quia tempore? Molestiae suscipit ad sint quae vero enim provident sed?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fuga expedita dolores, eveniet qui aspernatur doloribus libero fugit nemo, perspiciatis ab odit hic quia tempore? Molestiae suscipit ad sint quae vero enim provident sed?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card-3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla fuga expedita dolores, eveniet qui aspernatur doloribus libero fugit nemo, perspiciatis ab odit hic quia tempore? Molestiae suscipit ad sint quae vero enim provident sed?</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

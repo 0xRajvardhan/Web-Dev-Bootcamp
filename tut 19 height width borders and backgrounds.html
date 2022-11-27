@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height width border and background</title>
+    <style>
+        #firstPara {
+            font-size: 50px;
+            background-color: aquamarine;
+            height: 50px;
+            /*sets the height of background color*/
+            width: 420px;
+            /*sets the width of background*/
+            border-width: 4px;
+            border-color: green;
+            border-style: dashed;
+            border-radius: 10px;
+            /* instead of writing all this seperately, we can write like something given below  */
+        }
+
+        #secondPara {
+            font-size: 50px;
+            background-color: aquamarine;
+            height: 50px;
+            width: 420px;
+
+            border: 4px dashed green;
+            border-radius: 100px;
+        }
+
+        #anotherPara {
+            font-size: 40px;
+            background-color: aquamarine;
+            height: 50px;
+            width: 420px;
+            border-radius: 10px;
+            border-top: 10px dashed coral;
+            border-bottom: 10px solid greenyellow;
+            border-right: 10px dotted yellow;
+            border-left: 10px solid red;
+            border-bottom-left-radius: 15px;
+            /*changes the radius of spacific corner*/
+        }
+
+        #thirdPara {
+            height: 500px;
+            width: 435px;
+            background-image: url(https://www.codewithharry.com/img/logo-blue.png);
+            border: 5px dashed brown;
+            background-repeat: no-repeat;
+            /* this prevents repetition of image as we noticed while inserting background image */
+            background-color: rgb(163, 129, 194);
+            background-position: center center;
+            /* similar commands written below   */
+            /* background-position: 192px 34px ; */
+            /* background-position: center right ; */
+            /* background-position: top left ; */
+            /* background-position: bottom center ; */
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is heading</h2>
+
+    <p id="firstPara">This is a paragraph</p>
+    <hr>
+
+    <p id="secondPara"> This is a paragraph</p>
+    <hr>
+
+    <h2>This is another heading (Different Styling)</h2>
+
+    <p id="anotherPara">This is my paragraph</p>
+    <hr>
+
+    <p id="thirdPara">This is third paragraph</p>
+    <hr>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+writing in browser js and developer console

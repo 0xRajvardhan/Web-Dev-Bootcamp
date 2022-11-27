@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container {
+            height: 344px;
+            width: 100%;
+            border: 3px solid black;
+            /* initialize a container into a flexboxs */
+            display: flex;
+
+            /* flex properties for flex containers  */
+
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+            /* default value of flex direction is row  */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+
+            /* flex-flow: helps to add flex direction and flex wrap together in just one line; */
+
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+            /* justify-content: space-around; */
+
+
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            align-items: stretch;
+
+
+        }
+
+        .item {
+            width: 183px;
+            height: 43px;
+            background-color: tomato;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1 {
+
+            /* Flexbox properties for flex items  */
+            /* order: 2; */
+
+
+            /* higher the order, later it shows in the flexbox container  */
+            /* flex-grow: 3; */
+            /* negative values are invalid in flex grow  */
+            /* instead you can use flex shrink  */
+            /* flex-shrink: 3; */
+            flex-basis: 320px;
+            /* when flex direction is set to row then flex basis will adjust width of the item  */
+
+            /* when flex direction is set to column then flex basis will adjust height of the item  */
+
+        }
+
+        #item-2 {
+            /* flex-grow: 4; */
+            /* flex-shrink: 4; */
+        }
+
+        #item-3 {
+            align-self: center;
+            /* align-self: flex-end; */
+            /* align-self: flex-start; */
+
+
+            /* flex: flex grow, flex shrink, flex basis;  */
+
+            flex: 2 2 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a Flexbox</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div> -->
+        <!-- <div class="item" id="item-5">Fifth Box</div> -->
+        <!-- <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+
+</body>
+
+</html>

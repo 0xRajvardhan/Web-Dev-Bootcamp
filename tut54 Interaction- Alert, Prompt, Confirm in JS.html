@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction- Alert, Prompt, Confirm in JS</title>
+</head>
+
+<body>
+    <div class="container">This is our page</div>
+
+    <script>
+        // Alert in In-Browser JavaScript - does not return anything.
+        // Alert in JS 
+        alert("This is a message");
+
+        // Prompt in JS 
+        let name = prompt("What is your name?", "Guest");
+        console.log(name);
+
+        // Confirm is used to confirm or recheck to user 
+        // Confirm in JS 
+        let deletePost = confirm("Do you really want to delete this post?");
+
+        if (deletePost) {
+            console.log("Your post has been deleted successfully");
+        }
+        else {
+            console.log("Your post has not been deleted")
+        }
+        console.log(deletePost);
+
+
+        let userAge = prompt("Enter your age");
+        console.log(userAge);
+
+        if (userAge>18){
+            console.log("Access Granted!");
+        }
+        else{
+            console.log("Access Denied, you are under-age");
+        }
+
+    </script>
+</body>
+
+</html>

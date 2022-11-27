@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        body {
+            color: black;
+        }
+
+        .h1 {
+            background-color: red;
+            columns: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div > p {
+            /* > means direct child of div */
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        }
+        div + p{
+            /* if div is previous sibling of p */
+            color: white;
+            background-color: rgb(187, 123, 123);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul><li class="item"><p>This is another para inside li</p>
+            </ul></li>
+          
+            <p>This is a paragraph</p>
+        </div>
+
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+
+</html>

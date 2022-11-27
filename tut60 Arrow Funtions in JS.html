@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrows Functions in JavaScript</title>
+
+</head>
+
+<body>
+    <div class="container">
+        This is an arrow function tutorial
+    </div>
+
+
+    <script>
+        // This is our ARROW function 
+        let greet = () => {
+            console.log('Good Morning');
+        }
+        // function greet(){
+        //     console.log('Good Morning');
+        // }
+        // greet();
+
+        // instead of this we could have done it in less efforts by the following method
+
+
+        greet();
+        // Another example of ARROW function 
+        setTimeout(() => {
+            console.log("We are inside seTimeout");
+        }, 3000);
+
+        // let sum = (a,b) => {
+        //     return a + b;
+        // }
+        // Insted of writing like this we can same some time by writing like this in ARROW function 
+        let sum = (a, b) => a + b;
+        console.log(sum(2, 3));
+        // another example of ARROW function 
+        let half = a => a / 2;
+        console.log(half(2));
+
+        // example
+        let obj1 = {
+            greeting: "Ram Ram",
+            names: ["Honey", "Rohan", "Harry", "Dj Khiladi"],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log(this.greeting+" Khamma Ghani " + student);
+                })
+            }
+        }
+
+        // lexicle this (just a term to remember)
+
+        obj1.speak();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is Form Tutorial</h2>
+    <hr>
+    <form action="backend.php">
+    <label for="name">Name</label>
+    <div>
+        <input type="text" name="myName" id="name">
+    </div>
+    <br>
+    <label for="role">Role</label>
+    <div>
+        <input type="text" name="myRole" id="role">
+    </div>
+    <br>
+    <label for="email">Email</label>
+    <div>
+        <input type="email" name="myEmail" id="email">
+    </div>
+    <br>
+    <label for="dob">DOB</label>
+    <div>
+        <input type="date" name="" id="myDate" id="dob">
+    </div>
+    <br>
+    <label for="bonus">Bonus</label>
+    <div>
+        <input type="number" name="myBonus" id="bonus">
+    </div>
+    <br>
+    <label for="gender">Gender</label>
+    <div>
+        Male <input type="radio" name="myGender" id="gender"> Female <input type="radio" name="myGender" id="gender">
+        Other <input type="radio" name="myGender" id="gender">
+    </div>
+    <br>
+    <label for="eligibility">Are you eligible?</label>
+    <div>
+        <input type="checkbox" name="myEligibility" id="eligibility">
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <label for="SelfDescription"> Write about yourself</label>
+    <div>
+        <br><textarea name="yText" cols="30" rows="10" id="SelfDescription"></textarea>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>
+        <label for="car">Office Car Preference</label>
+        <select name="myCar" id="car">
+            <option value="TataIndica">Tata Indica</option>
+            <option value="MarutiSwift">Maruti Swift</option>
+            <option value="HondaAmaze"selected>Honda Amaze</option>
+            <option value="HundaiVerna">Hundai Verna</option>
+            <option value="TataNexon">Tata Nexon</option>
+            <option value="HondaCity">Honda City</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </div>
+    <br>
+    <hr>
+</form>
+</body>
+
+</html>

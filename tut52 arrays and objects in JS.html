@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Ojects in JavaScript</title>
+</head>
+
+<body>
+    <div class="container">simple html</div>
+    
+    <script>
+
+        // Primitive DataTypes
+        let myVar1 = 34;
+        let myVar2 = 'Sting';
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        // Object DataTypes 
+        let employee = {
+            name: "Honey",
+            salary: 10,
+            github: "Raj7Dev",
+            twitter: "Rajvardhansd"
+        };
+        console.log(employee);
+
+        // Array Object 
+        // let names = new Array[1, 2, 4, "Honey, undefined"];
+        let names = new Array(41, 2, 4, "Honey", undefined);
+        console.log(names);
+        // accessing index-2 element in names 
+        console.log(names[2]);
+        console.log(names.length); // .length shows number of elements not number of charaters
+        names = names.sort();
+        console.log(names); // sorted in increasing order 
+        names.push("This is pushed"); // this push command is used to print something in the end
+        console.log(names);
+
+    </script>
+</body>
+
+</html>

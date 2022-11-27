@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in JavaScript</title>
+</head>
+
+<body>
+
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        // first occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        //  Last occurence of substring
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        // Substring from a string 
+        var substr = str.slice (1,6); 
+        // slice can also take negative values but substring cannot 
+        var substr = str.substring (1,6);
+        // substr takes the length from first character ordered
+        var substr1 = str.substr (1,6);
+        console.log(substr1);
+
+        var replaced = str.replace('string','Honey');
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // var newString = str.concat ('New String');
+        // console.log(newString);
+
+        var strWithWhiteSpaces = "   this is a string !     !         !               ";
+        console.log(strWithWhiteSpaces);
+        console.log(strWithWhiteSpaces.trim());
+        // trim function trims or removes uneccessary white spaces from beginning and end of a string
+
+        var char3 = str.charAt(2);
+        // charAt means/shows charater at index 2 
+        console.log(char3);
+
+        var char4 = str.charCodeAt(2);
+        // charCodeAt means/shows charater code of charater at index 2
+        console.log(char4);
+
+        console.log(str[3]);
+    </script>
+</body>
+
+</html>

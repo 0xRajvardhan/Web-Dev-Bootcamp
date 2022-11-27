@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and listening to events in JS</title>
+
+    <style>
+        #btn {
+            padding: 10px 14px;
+            background-color: rgb(25, 12, 12);
+            border: 2px solid black;
+            color: yellow;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            color: white;
+        }
+
+        .container p {
+            background-color: maroon;
+            color: white;
+        }
+
+        .container p::selection {
+            color: yellow;
+            background-color: black;
+        }
+
+        .container h1 {
+            background-color: maroon;
+            color: white;
+        }
+
+        .container h1::selection {
+            color: yellow;
+            background-color: black;
+        }
+
+        body {
+            background-color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+     Browser events:
+     Click:
+     Context Menu:
+     Mouse Over / Mouse Out:
+     Mouse down / Mouse up:
+     Mouse Move:
+
+     Submit:
+     Focus:
+
+     DOM Content Loaded:
+
+     Transition end:
+    
+    -->
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia excepturi enim amet esse eius
+            perferendis
+            minima cumque optio ducimus tempore necessitatibus, reiciendis laudantium placeat quidem modi sapiente quos
+            saepe molestiae provident sint illum odio! Consequuntur, eius iste quibusdam voluptatum deserunt nulla earum
+            voluptates, officiis tempora vel sit eaque qui eos nam corporis corrupti tempore? At voluptatibus odio fugit
+            temporibus aperiam voluptas, dolore ipsum eum dolores. Aspernatur, ipsa hic fugiat et eius earum sit, vel
+            deleniti repellat nam accusantium enim ipsam non quae dolorum sint qui sunt. Repudiandae optio sapiente
+            deserunt eius mollitia quos fugit sit aliquid, totam explicabo autem consequatur temporibus quas repellat a
+            deleniti consequuntur qui quibusdam labore ipsa rem molestias necessitatibus numquam at. Dolores laudantium
+            doloribus id officiis quis animi sit possimus quibusdam voluptatem enim quo repellat similique,
+            reprehenderit ipsa eius, tempore inventore veniam? Nobis sint nostrum error, reiciendis labore impedit quos
+            perspiciatis facilis nesciunt eos aperiam consequuntur voluptatum ad in natus velit laboriosam enim nemo
+            fugit minima. Eos provident sint veritatis esse officiis laboriosam voluptate quam dicta nesciunt ea.
+            Aliquid nemo dolores quia dolor, non accusamus quis, necessitatibus, doloremque cupiditate sequi iste enim
+            animi facere voluptatem similique vel dolorum. Debitis consectetur ipsa officiis culpa amet quas quia
+            corrupti nisi commodi iste dolorem, delectus repellat quibusdam veniam nesciunt ipsum unde fugit expedita?
+            Eaque impedit veniam consequatur illo consectetur aperiam voluptas animi reprehenderit magni? Veritatis
+            reiciendis natus ab totam harum quae. Iusto!</p>
+
+    </div>
+
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+    <script>
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseover', function run(){
+        // confirm("You really want to do that ?")
+        // })
+        // para.addEventListener('mouseout', function run(){
+        // alert('Mouse Outside')
+        // })
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

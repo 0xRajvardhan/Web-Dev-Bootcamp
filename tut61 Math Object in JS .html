@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JS</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is a math object tutorial</h1>
+    </div>
+
+    <script>
+        let m = Math;
+        console.log(m);
+
+        // Printing the constants from Math Object 
+        console.log("This is the value of Math.E", Math.E);
+        console.log("This is the value of Math.LN2", Math.LN2);
+        console.log("This is the value of Math.SQRT1_2", Math.SQRT1_2);
+        console.log("This is the value of Math.PI", Math.PI);
+
+        // Printing some functions on this Math Object 
+
+        let a = 34.645;
+        let b = 89;
+        console.log("The value of a and b is ", a, b);
+        console.log("The value of a and b rounded is ", Math.round(a), b);
+
+        console.log("3 raised to the power 2 is ", Math.pow(3, 2));
+        console.log("2 raised to the power 12 is ", Math.pow(2,12));
+        console.log("1 raised to the power 12 is ", Math.pow(1,12));
+        console.log("Square root of 47 is ", Math.sqrt(49));
+        console.log("Square root of 65 is ", Math.sqrt(65));
+        console.log("Square root of 50 is ", Math.sqrt(50));
+        
+        // Ceil and Floor functions 
+
+        console.log("5.8 rounded 'up' to nearest intger ", Math.ceil(5.8));
+        console.log("5.8 rounded 'down' to nearest intger ", Math.floor(5.8));
+
+        // abs function ( gives absolute value )
+        console.log("Absolute value of 5.66 is ", Math.abs(5.6));
+        console.log("Absolute value of -5.66 is ", Math.abs(-5.6));
+        // it will still return a postive value because absolute value of any number is never negative 
+
+        // Trigonometric functions in Math Object 
+        console.log("The value of sin(pi/2) is ", Math.sin(Math.PI/2));
+        console.log("The value of tan(pi/2) is ", Math.tan(Math.PI/2));
+        console.log("The value of cons(pi/2) is ", Math.cos(Math.PI/2));
+        console.log("");
+
+
+        // Min and Max functions of Math Object 
+        console.log("Minimum value of 4, 5, 6 is ", Math.min(4, 5, 6));
+        console.log("Minimum value of 14, 15, 16 is ", Math.min(14, 15, 16));
+        console.log("Maximun value of 4, 5, 6 is ", Math.max(4, 5, 6));
+        console.log("Maximun value of 14, 15, 16 is ", Math.max(14, 15, 16));
+
+        // Generating a random number in Math Object 
+        let r = Math.random();
+        console.log("Random number is ", r);
+        // Random number between a and b
+        // (a,b) = a + (b-a)*Math.random();
+        let a1 = 1;
+        let b1 = 100;
+
+        let r1_100 = a1+(b1-a1)*Math.random();
+        console.log("The random number is ",Math.ceil(r1_100));
+    </script>
+</body>
+
+</html>

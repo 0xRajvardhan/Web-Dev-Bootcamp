@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, if-else conditions and Switch Case in JS</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is a string";
+        var string1 = "This is a string2";
+        console.log(string1);
+
+        // we will rarely use var from nowonwards because let is better 
+        let b = "u";
+        {
+            let b = "u6";
+            console.log(b);
+        }
+        console.log(b);
+        // Constant can NEVER be changed whatsoever
+        const a = "This cannot be changed";
+        console.log(a);
+        //  if else ladder
+        let age = 34;
+        if (age > 18) {
+            console.log("You can drink");
+        }
+        else if (age == 35) {
+            console.log(OK);
+        }
+        else if (age == 20) {
+            console.log(OK);
+        }
+        else {
+            console.log("You cannot drink");
+        }
+        // Switch Case 
+        const cups = 45;
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4");
+                break;
+
+            case 41:
+                console.log("The value of cups is 41");
+                break;
+                
+            case 42:
+                console.log("The value of cups is 42");
+                break;
+
+            case 43:
+                console.log("The value of cups is 43");
+                break;
+        
+            default:
+                console.log("The value of cups is none of the above");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        /* CSS positions: static(default), absolute, relative, fixed, sticky */
+.container{
+    border: 2px solid rgb(7, 3, 242);
+    background-color: rgb(111, 202, 222);
+    height: 3444px;
+}
+
+        .box {
+            display: inline-block;
+            border: 3px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* relative means relative to its previous or normal position (leaves a gap at normal position)*/
+
+            /* static means default or relative position */
+
+            /* Absolute means relative to the body or container (leaves a gap at normal position*/
+            
+            /* fixed means relative to its browser window */
+            
+        
+
+            /* position: relative; */
+            /* position: absolute; */
+            /* position: fixed; */
+            /* right: 10px; */
+            position: sticky;
+            background-color: blanchedalmond;
+            top: 3px;
+
+        }
+        #box4{
+            position: fixed;
+            background-color: rgb(97, 206, 162);
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat with us</div>
+        <div class="box" id="box4">chatbot</div>
+    </div>
+
+</body>
+
+</html>
