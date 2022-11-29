@@ -6,13 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>#{title}</title>
+    style
+        include ../static/style.css
 </head>
 
 <body>
-    <h1>This is the heading</h1>
-    <p>
-        |#{content}
-    </p>
+    <nav>
+        <ul>
+            <li><a href="/"> Home </a></li>
+            <li><a href="/"> About </a></li>
+            <li><a href="/"> Contact us </a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Membership: 60$ - Fill this form now!</h2>
+        <!-- <p>
+            |#{content}
+        </p> -->
+        <form action="/" id="contact">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="Address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="More about you"></textarea>
+            <div class="btn">Submit</div>
+        </form>
+    </div>
 </body>
 
 </html>
