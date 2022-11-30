@@ -66,16 +66,21 @@ textarea {
 }
 
 .btn {
-    margin: 4px 451px;
+    margin: 4px 500px;
     display: block;
-    padding: 5px 12px;
+    padding: 5px;
     background: black;
     color: white;
-    font-weight: bold;
-    box-shadow: 5px 5px 5px yellow;
+    /* font-weight: bold; */
+    box-shadow: 5px 5px white;
     border: none;
     font-size: 15px;
     border-radius: 5px;
     cursor: pointer;
     outline: none;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
 }
